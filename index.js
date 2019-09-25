@@ -1,7 +1,6 @@
 
 var express = require('express');  
 var ParseServer = require('parse-server').ParseServer;
-var ParseDashboard = require('parse-dashboard');  
 var path = require('path');  
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
@@ -34,6 +33,11 @@ var api = new ParseServer({
       apiKey: 'key-b1b3815d029d5f841c319e7fa5594e67',
       appName: 'Mufeez Bhai App',
     }
+  },
+  push: {
+    android: {
+      apiKey: 'AIzaSyBBCc6QGeOwT-IiCU8PLNgvCzcgSDyJqv8'
+    },
   }
 });
 
