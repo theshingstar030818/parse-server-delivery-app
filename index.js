@@ -60,7 +60,7 @@ httpServer.listen(port, function() {
 var dashboard = new ParseDashboard({
   "allowInsecureHTTP": true,
   "apps": [{
-      "serverURL": process.env.SERVER_URL || 'http://localhost:'+port+'/parse',
+      "serverURL": process.env.SERVER_URL || 'https://pacecouriers.com/mufeezBhaiApp',
       "appId": process.env.APP_ID || 'mufeezBhaiApp',
       "masterKey": process.env.MASTER_KEY || 'mufeezBhaiApp',
       "appName": "Mufeez Bhai App",
