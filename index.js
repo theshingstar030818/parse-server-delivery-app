@@ -10,7 +10,7 @@ if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
 
-var port = process.env.PORT || 1342;
+var port = process.env.PORT || 1341;
 
 // Set up parse server
 var api = new ParseServer({
